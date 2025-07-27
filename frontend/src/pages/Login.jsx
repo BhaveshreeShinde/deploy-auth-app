@@ -20,7 +20,7 @@ const Login = () => {
 const userLogin = async (e) => {
     e.preventDefault();
     try{
-        const response = await axios.post("http://localhost:5000/auth/login", loginData);
+        const response = await axios.post("https://deploy-auth-app.vercel.app/auth/login", loginData);
         console.log("Response from login:", response.data);
         if(response.data.success){
             alert("Login successful");

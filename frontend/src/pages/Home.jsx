@@ -16,7 +16,7 @@ const Home = () => {
             }
         }
         try{
-            const response = await axios.get("http://localhost:5000/products", headers);
+            const response = await axios.get("https://deploy-auth-app.vercel.app/products", headers);
             console.log("Products fetched:", response.data);
             setProducts(response.data);
         }catch(err){

@@ -22,7 +22,7 @@ const Signup = () => {
     const userSignup = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post("http://localhost:5000/auth/signup", userData);
+            const response = await axios.post("https://deploy-auth-app.vercel.app/auth/signup", userData);
             console.log("Response from signup:", response.data);
             if(response.data.success){
                 alert("User created successfully");
