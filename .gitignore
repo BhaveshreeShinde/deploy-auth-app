@@ -19,9 +19,5 @@ Thumbs.db
 .env
 .env.*
 
-# Build output
-dist/
-build/
-
 # VS Code
 .vscode/
